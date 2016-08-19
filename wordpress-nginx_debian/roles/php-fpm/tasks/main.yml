@@ -13,6 +13,9 @@
     - libphp-simplepie
     - php-xml-parser
 
+- name: stop php-fpm
+  service: name=php5-fpm state=stopped
+
 - name: Disable default pool
 #  command: mv /etc/php-fpm.d/www.conf /etc/php-fpm.d/www.disabled creates=/etc/php-fpm.d/www.disabled
   command: mv /etc/php5/fpm/pool.d/www.conf /etc/php5/fpm/pool.d/www.disabled creates=/etc/php5/fpm/pool.d/www.disabled
