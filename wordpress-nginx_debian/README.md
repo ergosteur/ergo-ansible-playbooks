@@ -9,6 +9,9 @@ Debian version reflects differences in Debian tools and packagenames:
 3. php-fpm -> php5-fpm  
 4. config file locations for php5-fpm, nginx  
 5. socket location for php5-fpm  
+6. add php5-ldap and php5-gd
+
+Playbook needs to be updated to add nginx official stable repo to get nginx 1.10
 
 These playbooks deploy a simple all-in-one configuration of the popular
 WordPress blogging platform and CMS, frontend by the Nginx web server and the
@@ -34,3 +37,4 @@ handle the configuration appropriately.
 
 We would love to see contributions and improvements, so please fork this
 repository on GitHub and send us your changes via pull requests.
+
